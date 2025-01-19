@@ -1,7 +1,7 @@
 # Kryphus-Hoodie
 ![Kryphus-Hoodie](readme_media/hoodie_banner.png)
 
-An enhanced version (with small fixes) of the original Hoodie for the Kryphus (a VRC-Avatar) which tries to remain backwards-compatibility to the original Kryphus model and hoodie as much as possible.
+An enhanced version (with small fixes) of the original Hoodie for the [Kryphus](https://dalearts.gumroad.com/l/Kryphus) (a VRC-Avatar) which tries to remain backwards-compatibility to the original Kryphus model and hoodie as much as possible.
 
 If you run into any issues, have suggestions or bug-reports - don't hesitate to contact me! Much appreciated. <3
 
