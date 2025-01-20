@@ -1,7 +1,7 @@
 # Kryphus-Hoodie
 ![Kryphus-Hoodie](readme_media/hoodie_banner.png)
 
-An enhanced version (with small fixes) of the original Hoodie for the [Kryphus](https://dalearts.gumroad.com/l/Kryphus) (a VRC-Avatar) which tries to remain backwards-compatibility to the original Kryphus model and hoodie as much as possible.
+An enhanced version (with small fixes) of the original Hoodie for the [Kryphus v1.2](https://dalearts.gumroad.com/l/Kryphus) which tries to remain backwards-compatibility to the original Kryphus model and hoodie as much as possible.
 
 If you run into any issues, have suggestions or bug-reports - don't hesitate to contact me! Much appreciated. <3
 
@@ -11,8 +11,7 @@ If you run into any issues, have suggestions or bug-reports - don't hesitate to 
 * Clipping of body parts and fur fixed
 * Cozy, warm covers for your ears!
 * Putting your hands into the pockets will make it buldge out
-* People can pull the hood into your face, blocking your sight
-* A toggle to make the hood invisible in first person
+* People can pull the hood into your face, blocking your sight (both toggleable)
 
 ## Installation
 ### Prerequisites
@@ -29,11 +28,8 @@ If you run into any issues, have suggestions or bug-reports - don't hesitate to 
 ### Workaround For A Bug In VRC's Rotational Constraints
 
 VRC SDK 3.7.2 up to the current version (3.7.5 at the writing of this document) has a bug that prevents additional VRC-Fury generated bones to be the source transformation for rotational constrainted target bones - or to put it simpler, your ears won't wiggle.
-The current workaround is to use the Ear-Bones from the Kryphus itself as the source transform, what sadly makes the asset not self contained.
 
-For all hoodie rotational constraints (RotationConstraint_EarBase1.L/R, RotationConstraint_Ear2.L/R, RotationConstraint_Ear3.L/R) you need to change the source transform to the corresponding one from the Kryphus Avatar itself - not the one from the hoodie armature.
-
-What you need to change for the ears to wiggle:
+The workaround: For all hoodie rotational constraints (RotationConstraint_EarBase1.L/R, RotationConstraint_Ear2.L/R, RotationConstraint_Ear3.L/R) you need to change the source transform to the corresponding one from the Kryphus Avatar itself - replacing the one from the hoodie armature:
 
 ![Workaround setup](readme_media/prefab_rotation_constraint_workaround.png)
 
@@ -48,11 +44,16 @@ Check the included XCFs/PSDs - they have a layer which tells you where to put yo
 
 Enjoy!
 
-## Terms Of Service
+## License (CC BY-NC-SA 4.0)
 
-* This hoodie is almost entirely based on the Kryphus Hoodie from the original creator, Dale R. [(Link to his Gumroad)](https://dalearts.gumroad.com/). He kindly agreed to make this one public, even though the original version is liable to costs. So please, if you like this hoodie, consider buying the clothing additions for the Kryphus from him, or leave him a tip through the usual channels. Much appreciated!
-* You can customize this hoodie however you like - including getting comissions done on it - but don't build public avatars with it (due to reasons above). Contact me in that case!
-* Reuploading or selling anything in this repository - or any works based off from it - is prohibited. Feel free to contact me if you have questions - again, the original Hoodie is liable to cost and this one is based heavily on it.
-* If you want to share this hoodie, please share it through this github-page, so people are able to read the Terms of Service.
-* By downloading anything from this repository you agree to all of these terms, accepting them as legally binding.
+This hoodie is almost entirely based on the Kryphus Hoodie from the original creator, Dale R. [(Gumroad)](https://dalearts.gumroad.com/). He kindly agreed to make this one public, even though the original version is liable to costs. So please, if you like this hoodie, consider buying the clothing additions for the Kryphus from him, or leave him a [tip](https://ko-fi.com/dalearts#paypalModal). Much appreciated!
 
+This hoodie is distributed under the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/), which means you are free to:
+* Share: copy and redistribute the material in any medium or format
+* Adapt: remix, transform, and build upon the material
+* The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+Under the following terms:
+* Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+* NonCommercial: You may not use the material for commercial purposes.
+* ShareAlike: If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
