@@ -25,14 +25,6 @@ If you run into any issues, have suggestions or bug-reports - don't hesitate to 
 
 ![Prefab Installation](readme_media/prefab_installation.png)
 
-### Workaround For A Bug In VRC's Rotational Constraints
-
-VRC SDK 3.7.2 up to the current version (3.7.5 at the writing of this document) has a bug that prevents additional VRC-Fury generated bones to be the source transformation for rotational constrainted target bones - or to put it simpler, your ears won't wiggle.
-
-The workaround: For all hoodie rotational constraints (RotationConstraint_EarBase1.L/R, RotationConstraint_Ear2.L/R, RotationConstraint_Ear3.L/R) you need to change the source transform to the corresponding one from the Kryphus Avatar itself - replacing the one from the hoodie armature:
-
-![Workaround setup](readme_media/prefab_rotation_constraint_workaround.png)
-
 And you're done - start play-mode to test if everything works!
 
 ## Using Your Own Pre-Existing Texture
